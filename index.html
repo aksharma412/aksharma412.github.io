@@ -382,7 +382,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         <div class="pub-num">6</div>
         <div>
           <div class="pub-title">Deformation Characterization of Additive Manufactured Polyether Ether Ketone Using Mirror Assisted Image Correlation</div>
-          <div class="pub-authors">Vipin Kumar, Aparna Krishnan, Iniyan A., D.M.K. Kumar, Vikas Bhardwaj, Suraj Kumar</div>
+          <div class="pub-authors">Vipin Gupta, Aparna Krishnan, N.I. Thiruselvam, D.M. Kulkarni, V.V. Chaudhari, S. Suraj, Raj Das</div>
           <div class="pub-venue">Submitted</div>
           <div class="pub-meta">
             <span class="badge badge-submitted">Submitted</span>
@@ -488,7 +488,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-title">Automated Equation &amp; Code Generator for CC Theory</div>
-          <div class="project-desc">Deriving working equations for a new coupled-cluster ansatz by hand takes weeks and is prone to sign errors. Built a program — using SymPy's secondquant module — that takes an ansatz, applies Wick's theorem symbolically, performs the BCH expansion to 4th order, and outputs validated np.einsum code. Built at IIT Bombay for Prof. Rahul Maitra's group; contributed to a published <em>J. Chem. Phys.</em> paper.</div>
+          <div class="project-desc">Deriving working equations for a new coupled-cluster ansatz by hand takes weeks and is prone to sign errors. Built a program — using SymPy's secondquant module — that takes an ansatz, applies Wick's theorem symbolically, performs the BCH expansion to 4th order, and outputs validated np.einsum code. Built at IIT Bombay for Prof. Rahul Maitra's group.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Code generation</span><span class="project-tag">IIT Bombay</span></div>
             <a class="project-gh" href="projects/dual-exp.html">View project →</a>
@@ -503,8 +503,8 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-flag">BITS Pilani Thesis</div>
-          <div class="project-title">Spin-Adapted Equation Generator for Open-Shell CC</div>
-          <div class="project-desc">Applying coupled-cluster to open-shell molecules without spin adaptation introduces unphysical contributions from wrong-spin states. Built a code generator that automates the spin integration of CC equations, producing spin-clean working equations and NumPy code with no manual algebra. Reduced derivation time by 80% and validated on seven molecules across stretched geometries.</div>
+          <div class="project-title">Spin-Adapted Equation Generator for CC Theory</div>
+          <div class="project-desc">Built an automatic equation generator for spin-adapted coupled-cluster theory using a spin-flip approach. The program uses SymPy's SecondQuant module to construct the second-quantized Hamiltonian and cluster operators, applies Wick's theorem symbolically, performs the BCH expansion, and outputs spin-adapted np.einsum terms for energy and amplitude equations. Validated against Psi4 for closed-shell molecules including H₂O, H₂O₂, N₂, HCN, and NH₃ at equilibrium and stretched geometries. The long-term goal is to extend the framework to high-spin open-shell systems.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Open-shell CC</span><span class="project-tag">BITS thesis</span></div>
             <a class="project-gh" href="projects/spin-adapt.html">View project →</a>
@@ -518,7 +518,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-title">Automated Pipeline for Solvated Molecular Spectra</div>
-          <div class="project-desc">Computing spectra for a molecule in water means averaging over hundreds of solvent configurations — each one a separate quantum chemistry job. Built a pipeline that runs the MD simulation, samples frames, defines the solvent shell at a chosen radius, generates input files, submits everything to the HPC cluster via SLURM, and averages the results. Cut total wall-time from 10 days to 12 hours. Work contributed to a Molecular Physics publication.</div>
+          <div class="project-desc">Computing spectra for a molecule in water means averaging over hundreds of solvent configurations — each one a separate quantum chemistry job. Built a pipeline that runs the MD simulation, samples frames, defines the solvent shell at a chosen radius, generates input files, submits everything to the HPC cluster via SLURM, and averages the results. Cut total wall-time from 10 days to 12 hours.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">MD + DFT</span><span class="project-tag">HPC / SLURM</span><span class="project-tag">Python</span></div>
             <a class="project-gh" href="projects/md-dft.html">View project →</a>
@@ -532,8 +532,8 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <span class="project-img-placeholder">dic.png</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Mirror-Assisted 3D Strain Measurement</div>
-          <div class="project-desc">Getting strain data from the side surface of a specimen normally means extra cameras. Designed a single-mirror arrangement that redirects the side surface into the existing camera's field of view, then derived the geometric transformation to map the reflected image back to real coordinates. Validated on 3D-printed carbon-reinforced PEEK specimens; results submitted for publication.</div>
+          <div class="project-title">Mirror-Assisted 3D Strain Measurement (MAIC)</div>
+          <div class="project-desc">Conventional DIC can only image one surface at a time. Built a mirror-assisted image correlation (MAIC) system that folds the side surface of a tensile specimen into the stereo camera's field of view using a single planar mirror, enabling simultaneous front- and side-surface strain measurement with no extra cameras or synchronization hardware. Derived the reflection-based coordinate transformation to map virtual mirror points back to their true physical positions on the side surface. Validated against strain gauges on injection-molded and MEX-printed PEEK and carbon-reinforced PEEK, capturing strain localization, interlayer debonding, and through-thickness anisotropy through failure, well beyond the ~10,000 µε saturation limit of strain gauges.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">3D-DIC</span><span class="project-tag">PEEK</span><span class="project-tag">Undergraduate</span></div>
             <a class="project-gh" href="projects/dic.html">View project →</a>
