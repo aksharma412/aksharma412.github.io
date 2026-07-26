@@ -458,6 +458,17 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="project-card">
         <div class="project-body">
+          <div class="project-flag">Manuscript in preparation</div>
+          <div class="project-title">Where Real-Time and EOM Unitary Coupled-Cluster Disagree</div>
+          <div class="project-desc">In standard coupled-cluster theory, real-time and equation-of-motion excitation energies are provably identical, and that equivalence is routinely used to validate new RT implementations. Showed it fails for the unitary ansatz: because σ = T − T† no longer commutes with the excitation operators and its BCH expansion never terminates, the two routes disagree at any finite truncation order. Derived a closed-form expression for the discrepancy, proved it vanishes in exactly the two limits that recover the standard-CC theorem, and certified it against brute-force operator algebra in an exactly solvable two-level model to 10⁻¹². Characterized the residual shift numerically for He and HF at BCH order 2, where it behaves as a rigid, correlation-energy-scaled offset rather than an implementation artifact.</div>
+          <div class="project-footer">
+            <div class="project-tags"><span class="project-tag">Unitary CC</span><span class="project-tag">Real-time CC</span><span class="project-tag">Linear response</span><span class="project-tag">PyCC</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-body">
           <div class="project-title">VCD at the MP2 Level</div>
           <div class="project-desc">Extended the density-matrix AAT framework to MP2, where the wavefunction is non-variational and a direct analytic gradient is not straightforward. Used the Z-vector/Lagrangian approach to sidestep solving coupled-perturbed equations for every nuclear displacement. Validated the full pipeline: Hessian, APTs, AATs, rotational strengths, to below 10⁻⁷ against a determinant-based reference.</div>
           <div class="project-footer">
@@ -557,6 +568,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <li>Developing analytic VCD theory at CISD and CCSD levels via a density-matrix reformulation of atomic axial tensors.</li>
           <li>Proved the 2-RDM vanishing theorem for the orbital–orbital AAT block, a result with direct implications for CC-VCD generalization.</li>
           <li>Implemented RT-TDCC orbital decomposition and ACF analysis; accepted at JPCA (arXiv:2605.17409).</li>
+          <li>Showed that RT-UCC and EOM-UCC excitation energies are not equivalent at finite BCH truncation, deriving the closed-form discrepancy and certifying it against exact operator algebra.</li>
           <li>Active contributor to PyCC: implemented TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis.</li>
           <li>Best Poster Award, SETCA 2026, Atlanta.</li>
         </ul></div>
