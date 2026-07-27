@@ -3,7 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Aparna Krishnan</title>
+<title>Aparna Krishnan · Theoretical Chemistry, Virginia Tech</title>
+<meta name="description" content="PhD candidate in theoretical chemistry at Virginia Tech (Crawford Group). I develop high-accuracy quantum chemistry methods and software for chiroptical spectroscopy, analytic derivative theory, and real-time coupled-cluster dynamics."/>
+<meta name="author" content="Aparna Krishnan"/>
+<link rel="canonical" href="https://aksharma412.github.io/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://aksharma412.github.io/"/>
+<meta property="og:title" content="Aparna Krishnan · Theoretical Chemistry, Virginia Tech"/>
+<meta property="og:description" content="PhD candidate developing high-accuracy quantum chemistry methods and software: chiroptical spectroscopy, analytic derivative theory, and real-time coupled-cluster dynamics."/>
+<meta property="og:image" content="https://aksharma412.github.io/img/photo.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Aparna Krishnan · Theoretical Chemistry, Virginia Tech"/>
+<meta name="twitter:description" content="PhD candidate developing high-accuracy quantum chemistry methods and software for chiroptical spectroscopy and real-time coupled-cluster dynamics."/>
+<meta name="twitter:image" content="https://aksharma412.github.io/img/photo.jpg"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231a3a5c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23fafaf8' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -216,6 +229,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       </div>
       <div class="hero-socials">
         <a href="mailto:aparnak22@vt.edu">aparnak22@vt.edu</a>
+        <a href="https://scholar.google.com/citations?user=2_NRMS8AAAAJ" target="_blank">Google Scholar</a>
         <a href="https://github.com/aksharma412" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/aparna-krishnan-57643a172/" target="_blank">LinkedIn</a>
         <a href="https://arxiv.org/abs/2605.17409" target="_blank">arXiv</a>
@@ -396,6 +410,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="pub-venue">In preparation</div>
           <div class="pub-meta">
             <span class="badge badge-prep">In Preparation</span>
+            <a class="pub-link" href="https://github.com/CrawfordGroup/pycc" target="_blank">github.com/CrawfordGroup/pycc →</a>
           </div>
         </div>
       </div>
@@ -436,7 +451,6 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Derived a density-matrix reformulation of atomic axial tensors for VCD within CISD, proving a key simplification that removes an entire class of terms and makes the framework cleanly extensible to coupled-cluster. Implemented the full analytic pipeline in PyCC: Hessian, normal modes, rotational strengths, validated against finite difference to better than 10⁻⁷.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">PyCC</span><span class="project-tag">CISD</span><span class="project-tag">Analytic derivatives</span></div>
-            <a class="project-gh" href="projects/cisd-vcd.html">View project →</a>
           </div>
         </div>
       </div>
@@ -451,7 +465,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Real-time coupled-cluster gives accurate absorption spectra but no insight into what is causing each peak. Developed methods to decompose any spectral feature into individual orbital transitions, using both the autocorrelation function and the dipole moment as the starting observable. The ACF-based approach cuts storage requirements by 95% compared to storing full time-domain data. Both are now part of PyCC.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Real-time CC</span><span class="project-tag">ACF</span><span class="project-tag">Dipole decomposition</span><span class="project-tag">Integrators</span><span class="project-tag">PyCC</span></div>
-            <a class="project-gh" href="projects/rtcc.html">View project →</a>
+            <a class="project-gh" href="https://arxiv.org/abs/2605.17409" target="_blank">arXiv →</a>
           </div>
         </div>
       </div>
@@ -473,7 +487,6 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Extended the density-matrix AAT framework to MP2, where the wavefunction is non-variational and a direct analytic gradient is not straightforward. Used the Z-vector/Lagrangian approach to sidestep solving coupled-perturbed equations for every nuclear displacement. Validated the full pipeline: Hessian, APTs, AATs, rotational strengths, to below 10⁻⁷ against a determinant-based reference.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">MP2</span><span class="project-tag">Z-vector</span><span class="project-tag">Python</span></div>
-            <a class="project-gh" href="projects/mp2-vcd.html">View project →</a>
           </div>
         </div>
       </div>
@@ -487,7 +500,6 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">In real-time simulations, the external field strength is a free parameter: too weak gives noise, too strong pushes you out of the linear response regime. Characterized this dependence systematically and developed Fourier transform protocols for extracting clean spectra from the ACF. Connects directly to ensuring the orbital decomposition analysis stays physically meaningful.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Real-time CC</span><span class="project-tag">Linear response</span><span class="project-tag">Python</span></div>
-            <a class="project-gh" href="projects/field-strength.html">View project →</a>
           </div>
         </div>
       </div>
@@ -498,10 +510,10 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-title">Biorthogonal Jacobi-Davidson Eigensolver</div>
-          <div class="project-desc">Excited-state calculations in coupled-cluster theory require solving a non-Hermitian eigenvalue problem — standard symmetric solvers do not apply. Implemented a Jacobi-Davidson solver that simultaneously tracks left and right eigenvectors and enforces biorthogonality throughout. Converges 25× faster than direct diagonalization on the test matrices used in EOM-CC.</div>
+          <div class="project-desc">Excited-state calculations in coupled-cluster theory require solving a non-Hermitian eigenvalue problem — standard symmetric solvers do not apply. Implemented a Jacobi-Davidson solver that simultaneously tracks left and right eigenvectors and enforces biorthogonality throughout. Converges roughly 25× faster than a standard Jacobi-Davidson implementation on the same test problem, at the cost of carrying a second subspace.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Numerical methods</span><span class="project-tag">EOM-CC</span><span class="project-tag">Python</span></div>
-            <a class="project-gh" href="projects/bijd.html">View project →</a>
+            <a class="project-gh" href="https://github.com/aksharma412/Biorthogonal-Jacobi-Davidson-algorithm" target="_blank">GitHub →</a>
           </div>
         </div>
       </div>
@@ -512,7 +524,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Deriving working equations for a new coupled-cluster ansatz by hand takes weeks and is prone to sign errors. Built a program — using SymPy's secondquant module — that takes an ansatz, applies Wick's theorem symbolically, performs the BCH expansion to 4th order, and outputs validated np.einsum code. Built at IIT Bombay for Prof. Rahul Maitra's group.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Code generation</span><span class="project-tag">IIT Bombay</span></div>
-            <a class="project-gh" href="projects/dual-exp.html">View project →</a>
+            <a class="project-gh" href="https://github.com/aksharma412/cc-equation-generator" target="_blank">GitHub →</a>
           </div>
         </div>
       </div>
@@ -527,7 +539,6 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Built an automatic equation generator for spin-adapted coupled-cluster theory using a spin-flip approach. The program uses SymPy's SecondQuant module to construct the second-quantized Hamiltonian and cluster operators, applies Wick's theorem symbolically, performs the BCH expansion, and outputs spin-adapted np.einsum terms for energy and amplitude equations. Validated against Psi4 for closed-shell molecules including H₂O, H₂O₂, N₂, HCN, and NH₃ at equilibrium and stretched geometries. The long-term goal is to extend the framework to high-spin open-shell systems.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Open-shell CC</span><span class="project-tag">BITS thesis</span></div>
-            <a class="project-gh" href="projects/spin-adapt.html">View project →</a>
           </div>
         </div>
       </div>
@@ -541,7 +552,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <div class="project-desc">Computing spectra for a molecule in water means averaging over hundreds of solvent configurations — each one a separate quantum chemistry job. Built a pipeline that runs the MD simulation, samples frames, defines the solvent shell at a chosen radius, generates input files, submits everything to the HPC cluster via SLURM, and averages the results. Cut total wall-time from 10 days to 12 hours.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">MD + DFT</span><span class="project-tag">HPC / SLURM</span><span class="project-tag">Python</span></div>
-            <a class="project-gh" href="projects/md-dft.html">View project →</a>
+            <a class="project-gh" href="https://github.com/aksharma412/solvated-spectra-pipeline" target="_blank">GitHub →</a>
           </div>
         </div>
       </div>
@@ -569,7 +580,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <li>Proved the 2-RDM vanishing theorem for the orbital–orbital AAT block, a result with direct implications for CC-VCD generalization.</li>
           <li>Implemented RT-TDCC orbital decomposition and ACF analysis; accepted at JPCA (arXiv:2605.17409).</li>
           <li>Showed that RT-UCC and EOM-UCC excitation energies are not equivalent at finite BCH truncation, deriving the closed-form discrepancy and certifying it against exact operator algebra.</li>
-          <li>Active contributor to PyCC: implemented TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis.</li>
+          <li>Active contributor to <a href="https://github.com/CrawfordGroup/pycc" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-light)">PyCC</a>: implemented TD-EOM-CC methods, VCD pipelines, and orbital decomposition analysis.</li>
           <li>Best Poster Award, SETCA 2026, Atlanta.</li>
         </ul></div>
       </div>
@@ -744,6 +755,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         <a href="mailto:aparnak22@vt.edu" class="btn-primary">aparnak22@vt.edu</a>
       </div>
       <div class="contact-row">
+        <a href="https://scholar.google.com/citations?user=2_NRMS8AAAAJ" target="_blank" class="contact-lnk">Google Scholar</a>
         <a href="https://github.com/aksharma412" target="_blank" class="contact-lnk">GitHub</a>
         <a href="https://www.linkedin.com/in/aparna-krishnan-57643a172/" target="_blank" class="contact-lnk">LinkedIn</a>
         <a href="https://arxiv.org/abs/2605.17409" target="_blank" class="contact-lnk">arXiv</a>
