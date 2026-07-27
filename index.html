@@ -30,7 +30,7 @@
   --border2:#ccc9bf;
   --text:#1a1916;
   --text2:#5a584f;
-  --text3:#9a9890;
+  --text3:#6e6c64;
   --accent:#1a3a5c;
   --accent2:#2a5a8c;
   --accent-light:#e8eef5;
@@ -42,6 +42,8 @@
   --sans:'DM Sans','Helvetica Neue',sans-serif;
 }
 html{scroll-behavior:smooth}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:300;background:var(--accent);color:#fff;font-family:var(--sans);font-size:13px;padding:10px 18px;border-radius:0 0 3px 0;text-decoration:none}
+.skip-link:focus{left:0}
 body{font-family:var(--serif);background:var(--bg);color:var(--text);font-size:18px;line-height:1.75;overflow-x:hidden}
 
 /* ── NAV ── */
@@ -193,6 +195,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
 /* ── FIGURE LIGHTBOX ── */
 .project-img img{cursor:zoom-in}
+.project-img img:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lightbox{position:fixed;inset:0;z-index:200;background:rgba(26,25,22,0.92);display:none;align-items:center;justify-content:center;padding:2.5rem;cursor:zoom-out}
 .lightbox.open{display:flex;animation:fadeIn 0.2s ease}
 .lightbox img{max-width:100%;max-height:100%;object-fit:contain;background:#fff;border-radius:4px;padding:12px}
@@ -220,6 +223,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 </style>
 </head>
 <body>
+<a class="skip-link" href="#about">Skip to content</a>
 
 <nav>
   <div class="nav-inner">
@@ -353,7 +357,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">1</div>
         <div>
-          <div class="pub-title">Chemical Interpretation of Time-Dependent Coupled-Cluster Theory</div>
+          <h3 class="pub-title">Chemical Interpretation of Time-Dependent Coupled-Cluster Theory</h3>
           <div class="pub-authors">Aparna Krishnan, Håkon Emil Kristiansen, Benjamin G. Peyton, T. Daniel Crawford, Thomas Bondo Pedersen</div>
           <div class="pub-venue">Journal of Physical Chemistry A · accepted</div>
           <div class="pub-meta">
@@ -366,7 +370,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">2</div>
         <div>
-          <div class="pub-title">Density-Matrix Formulation of Atomic Axial Tensors for Vibrational Circular Dichroism within Configuration Interaction Theory</div>
+          <h3 class="pub-title">Density-Matrix Formulation of Atomic Axial Tensors for Vibrational Circular Dichroism within Configuration Interaction Theory</h3>
           <div class="pub-authors">Aparna Krishnan, Brendan Shumberger, T. Daniel Crawford</div>
           <div class="pub-venue">Journal of Chemical Theory and Computation · in preparation, submitting shortly</div>
           <div class="pub-meta">
@@ -378,7 +382,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">3</div>
         <div>
-          <div class="pub-title">Density-Matrix Formulation of Atomic Axial Tensors for Vibrational Circular Dichroism at the Coupled-Cluster Singles and Doubles Level</div>
+          <h3 class="pub-title">Density-Matrix Formulation of Atomic Axial Tensors for Vibrational Circular Dichroism at the Coupled-Cluster Singles and Doubles Level</h3>
           <div class="pub-authors">Aparna Krishnan, T. Daniel Crawford</div>
           <div class="pub-venue">In preparation</div>
           <div class="pub-meta">
@@ -390,7 +394,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">4</div>
         <div>
-          <div class="pub-title">Vibrational Circular Dichroism Across Correlated Wavefunction Methods: A Comparison of HF, MP2, CISD, and CCSD</div>
+          <h3 class="pub-title">Vibrational Circular Dichroism Across Correlated Wavefunction Methods: A Comparison of HF, MP2, CISD, and CCSD</h3>
           <div class="pub-authors">Aparna Krishnan, T. Daniel Crawford</div>
           <div class="pub-venue">In preparation</div>
           <div class="pub-meta">
@@ -402,7 +406,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">5</div>
         <div>
-          <div class="pub-title">Real-Time Unitary Coupled-Cluster Methods for Molecular Spectroscopy</div>
+          <h3 class="pub-title">Real-Time Unitary Coupled-Cluster Methods for Molecular Spectroscopy</h3>
           <div class="pub-authors">Ajay Melekamburath, Aparna Krishnan, Edward Valeev, T. Daniel Crawford</div>
           <div class="pub-venue">In preparation · submitting soon</div>
           <div class="pub-meta">
@@ -415,7 +419,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">6</div>
         <div>
-          <div class="pub-title">PyCC: An Open-Source Python-Based Coupled Cluster Package</div>
+          <h3 class="pub-title">PyCC: An Open-Source Python-Based Coupled Cluster Package</h3>
           <div class="pub-authors">Crawford Group (incl. Aparna Krishnan)</div>
           <div class="pub-venue">In preparation</div>
           <div class="pub-meta">
@@ -428,7 +432,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="pub-item">
         <div class="pub-num">7</div>
         <div>
-          <div class="pub-title">Deformation Characterization of Additive Manufactured Polyether Ether Ketone Using Mirror Assisted Image Correlation</div>
+          <h3 class="pub-title">Deformation Characterization of Additive Manufactured Polyether Ether Ketone Using Mirror Assisted Image Correlation</h3>
           <div class="pub-authors">Vipin Gupta, Aparna Krishnan, N.I. Thiruselvam, D.M. Kulkarni, V.V. Chaudhari, S. Suraj, Raj Das</div>
           <div class="pub-venue">Submitted</div>
           <div class="pub-meta">
@@ -457,7 +461,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-flag">Thesis · Featured</div>
-          <div class="project-title">Vibrational Circular Dichroism at the CISD Level</div>
+          <h3 class="project-title">Vibrational Circular Dichroism at the CISD Level</h3>
           <div class="project-desc">Derived a density-matrix reformulation of atomic axial tensors for VCD within CISD, proving a key simplification that removes an entire class of terms and makes the framework cleanly extensible to coupled-cluster. Implemented the full analytic pipeline in PyCC: Hessian, normal modes, rotational strengths, validated against finite difference to better than 10⁻⁷.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">PyCC</span><span class="project-tag">CISD</span><span class="project-tag">Analytic derivatives</span></div>
@@ -471,7 +475,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-flag">Thesis · Featured · arXiv:2605.17409</div>
-          <div class="project-title">Orbital Decomposition of Real-Time CC Spectra</div>
+          <h3 class="project-title">Orbital Decomposition of Real-Time CC Spectra</h3>
           <div class="project-desc">Real-time coupled-cluster gives accurate absorption spectra but no insight into what is causing each peak. Developed methods to decompose any spectral feature into individual orbital transitions, using both the autocorrelation function and the dipole moment as the starting observable. The ACF-based approach cuts storage requirements by 95% compared to storing full time-domain data. Both are now part of PyCC.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Real-time CC</span><span class="project-tag">ACF</span><span class="project-tag">Dipole decomposition</span><span class="project-tag">Integrators</span><span class="project-tag">PyCC</span></div>
@@ -483,7 +487,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="project-card">
         <div class="project-body">
           <div class="project-flag">Manuscript in preparation</div>
-          <div class="project-title">Where Real-Time and EOM Unitary Coupled-Cluster Disagree</div>
+          <h3 class="project-title">Where Real-Time and EOM Unitary Coupled-Cluster Disagree</h3>
           <div class="project-desc">In standard coupled-cluster theory, real-time and equation-of-motion excitation energies are provably identical, and that equivalence is routinely used to validate new RT implementations. Showed it fails for the unitary ansatz: because σ = T − T† no longer commutes with the excitation operators and its BCH expansion never terminates, the two routes disagree at any finite truncation order. Derived a closed-form expression for the discrepancy, proved it vanishes in exactly the two limits that recover the standard-CC theorem, and certified it against brute-force operator algebra in an exactly solvable two-level model to 10⁻¹². Characterized the residual shift numerically for He and HF at BCH order 2, where it behaves as a rigid, correlation-energy-scaled offset rather than an implementation artifact.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Unitary CC</span><span class="project-tag">Real-time CC</span><span class="project-tag">Linear response</span><span class="project-tag">PyCC</span></div>
@@ -493,7 +497,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="project-card">
         <div class="project-body">
-          <div class="project-title">VCD at the MP2 Level</div>
+          <h3 class="project-title">VCD at the MP2 Level</h3>
           <div class="project-desc">Extended the density-matrix AAT framework to MP2, where the wavefunction is non-variational and a direct analytic gradient is not straightforward. Used the Z-vector/Lagrangian approach to sidestep solving coupled-perturbed equations for every nuclear displacement. Validated the full pipeline: Hessian, APTs, AATs, rotational strengths, to below 10⁻⁷ against a determinant-based reference.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">MP2</span><span class="project-tag">Z-vector</span><span class="project-tag">Python</span></div>
@@ -506,7 +510,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <img src="img/field_dep.png" alt="ACF singles decomposition at four external field strengths from 0.01 to 10 au, showing departure from the linear response regime" loading="lazy"/>
         </div>
         <div class="project-body">
-          <div class="project-title">Field-Strength Dependence in RT-CC Spectroscopy</div>
+          <h3 class="project-title">Field-Strength Dependence in RT-CC Spectroscopy</h3>
           <div class="project-desc">In real-time simulations, the external field strength is a free parameter: too weak gives noise, too strong pushes you out of the linear response regime. Characterized this dependence systematically and developed Fourier transform protocols for extracting clean spectra from the ACF. Connects directly to ensuring the orbital decomposition analysis stays physically meaningful.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Real-time CC</span><span class="project-tag">Linear response</span><span class="project-tag">Python</span></div>
@@ -519,7 +523,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <img src="img/bijd.png" alt="Convergence of the biorthogonal Jacobi-Davidson eigenvalue estimate against the closest exact eigenvalue, converged within two iterations" loading="lazy"/>
         </div>
         <div class="project-body">
-          <div class="project-title">Biorthogonal Jacobi-Davidson Eigensolver</div>
+          <h3 class="project-title">Biorthogonal Jacobi-Davidson Eigensolver</h3>
           <div class="project-desc">Excited-state calculations in coupled-cluster theory require solving a non-Hermitian eigenvalue problem — standard symmetric solvers do not apply. Implemented a Jacobi-Davidson solver that simultaneously tracks left and right eigenvectors and enforces biorthogonality throughout. Converges roughly 25× faster than a standard Jacobi-Davidson implementation on the same test problem, at the cost of carrying a second subspace.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">Numerical methods</span><span class="project-tag">EOM-CC</span><span class="project-tag">Python</span></div>
@@ -530,7 +534,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="project-card">
         <div class="project-body">
-          <div class="project-title">Automated Equation &amp; Code Generator for CC Theory</div>
+          <h3 class="project-title">Automated Equation &amp; Code Generator for CC Theory</h3>
           <div class="project-desc">Deriving working equations for a new coupled-cluster ansatz by hand takes weeks and is prone to sign errors. Built a program — using SymPy's secondquant module — that takes an ansatz, applies Wick's theorem symbolically, performs the BCH expansion to 4th order, and outputs validated np.einsum code. Built at IIT Bombay for Prof. Rahul Maitra's group.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Code generation</span><span class="project-tag">IIT Bombay</span></div>
@@ -545,7 +549,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
         </div>
         <div class="project-body">
           <div class="project-flag">BITS Pilani Thesis</div>
-          <div class="project-title">Spin-Adapted Equation Generator for CC Theory</div>
+          <h3 class="project-title">Spin-Adapted Equation Generator for CC Theory</h3>
           <div class="project-desc">Built an automatic equation generator for spin-adapted coupled-cluster theory using a spin-flip approach. The program uses SymPy's SecondQuant module to construct the second-quantized Hamiltonian and cluster operators, applies Wick's theorem symbolically, performs the BCH expansion, and outputs spin-adapted np.einsum terms for energy and amplitude equations. Validated against Psi4 for closed-shell molecules including H₂O, H₂O₂, N₂, HCN, and NH₃ at equilibrium and stretched geometries. The long-term goal is to extend the framework to high-spin open-shell systems.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">SymPy</span><span class="project-tag">Open-shell CC</span><span class="project-tag">BITS thesis</span></div>
@@ -558,7 +562,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
           <img src="img/solvation.png" alt="Circular intensity difference spectra averaged across 3.0, 3.25, and 3.75 angstrom solvation shells, with the corresponding solvated molecular structures" loading="lazy"/>
         </div>
         <div class="project-body">
-          <div class="project-title">Automated Pipeline for Solvated Molecular Spectra</div>
+          <h3 class="project-title">Automated Pipeline for Solvated Molecular Spectra</h3>
           <div class="project-desc">Computing spectra for a molecule in water means averaging over hundreds of solvent configurations — each one a separate quantum chemistry job. Built a pipeline that runs the MD simulation, samples frames, defines the solvent shell at a chosen radius, generates input files, submits everything to the HPC cluster via SLURM, and averages the results. Cut total wall-time from 10 days to 12 hours.</div>
           <div class="project-footer">
             <div class="project-tags"><span class="project-tag">MD + DFT</span><span class="project-tag">HPC / SLURM</span><span class="project-tag">Python</span></div>
@@ -583,7 +587,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="timeline-item current">
         <div class="timeline-date">August 2023 – Present</div>
-        <div class="timeline-role">PhD Researcher</div>
+        <h3 class="timeline-role">PhD Researcher</h3>
         <div class="timeline-place">Crawford Group, Virginia Tech · Blacksburg, VA</div>
         <div class="timeline-body"><ul>
           <li>Developing analytic VCD theory at CISD and CCSD levels via a density-matrix reformulation of atomic axial tensors.</li>
@@ -597,7 +601,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="timeline-item">
         <div class="timeline-date">August 2022 – May 2023</div>
-        <div class="timeline-role">Undergraduate Thesis Intern</div>
+        <h3 class="timeline-role">Undergraduate Thesis Intern</h3>
         <div class="timeline-place">Crawford Group, Virginia Tech · Blacksburg, VA</div>
         <div class="timeline-body"><ul>
           <li>Automated spin integration of CC equations and code generation, reducing manual calculation time by 80%.</li>
@@ -607,7 +611,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="timeline-item">
         <div class="timeline-date">May 2021 – March 2022</div>
-        <div class="timeline-role">Research Intern</div>
+        <h3 class="timeline-role">Research Intern</h3>
         <div class="timeline-place">Prof. Rahul Maitra's Group, IIT Bombay · Mumbai, India</div>
         <div class="timeline-body"><ul>
           <li>Developed rigorous theoretical foundation in coupled-cluster theory and its applications.</li>
@@ -617,7 +621,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="timeline-item">
         <div class="timeline-date">August – October 2020</div>
-        <div class="timeline-role">Remote Research Intern</div>
+        <h3 class="timeline-role">Remote Research Intern</h3>
         <div class="timeline-place">Dr. Ashok Ajoy's Lab, UC Berkeley</div>
         <div class="timeline-body"><ul>
           <li>Contributed to design and 3D modeling of NV centers in nano-diamonds for spin relaxation studies via magnetic hyperpolarization.</li>
@@ -627,7 +631,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
 
       <div class="timeline-item">
         <div class="timeline-date">May – July 2020</div>
-        <div class="timeline-role">Research Intern</div>
+        <h3 class="timeline-role">Research Intern</h3>
         <div class="timeline-place">Dhio Research and Engineering Pvt. Ltd. · Bangalore, India</div>
         <div class="timeline-body"><ul>
           <li>Simulated viscoelastic properties of polymeric materials using J-OCTA quantum simulation software.</li>
@@ -652,7 +656,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">SETCA 2026</div><div class="talk-year">Atlanta, GA</div></div>
         <div>
-          <div class="talk-title">Density-matrix formulation of atomic axial tensors for CISD vibrational circular dichroism <span class="talk-award">Best Poster</span></div>
+          <h3 class="talk-title">Density-matrix formulation of atomic axial tensors for CISD vibrational circular dichroism <span class="talk-award">Best Poster</span></h3>
           <div class="talk-venue">Georgia State University · May 2026</div>
         </div>
       </div>
@@ -660,7 +664,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">MRPSS 2025</div><div class="talk-year">Stockholm, SE</div></div>
         <div>
-          <div class="talk-title">A tale of two decompositions: Analyzing electronic excitations in real-time coupled-cluster</div>
+          <h3 class="talk-title">A tale of two decompositions: Analyzing electronic excitations in real-time coupled-cluster</h3>
           <div class="talk-venue">Stockholm, Sweden · 2025</div>
         </div>
       </div>
@@ -668,7 +672,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">SETCA 2025</div><div class="talk-year">Memphis, TN</div></div>
         <div>
-          <div class="talk-title">Orbital-resolved absorption spectra from RT-CC autocorrelation function</div>
+          <h3 class="talk-title">Orbital-resolved absorption spectra from RT-CC autocorrelation function</h3>
           <div class="talk-venue">University of Memphis · 2025</div>
         </div>
       </div>
@@ -676,7 +680,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">ESQC 2024</div><div class="talk-year">Palermo, IT</div></div>
         <div>
-          <div class="talk-title">Understanding Real-Time Coupled-Cluster Absorption Spectra: Orbital Contributions from Individual Transitions</div>
+          <h3 class="talk-title">Understanding Real-Time Coupled-Cluster Absorption Spectra: Orbital Contributions from Individual Transitions</h3>
           <div class="talk-venue">Palermo, Italy · 2024</div>
         </div>
       </div>
@@ -684,7 +688,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">SERMACs 2024</div><div class="talk-year">Atlanta, GA</div></div>
         <div>
-          <div class="talk-title">Understanding Real-Time Coupled-Cluster Absorption Spectra: Orbital Contributions from Individual Transitions</div>
+          <h3 class="talk-title">Understanding Real-Time Coupled-Cluster Absorption Spectra: Orbital Contributions from Individual Transitions</h3>
           <div class="talk-venue">Atlanta, Georgia · 2024</div>
         </div>
       </div>
@@ -692,7 +696,7 @@ footer p{font-family:var(--sans);font-size:12px;color:var(--text3);font-weight:3
       <div class="talk-item">
         <div><div class="talk-conf">SETCA 2023</div><div class="talk-year">Columbia, SC</div></div>
         <div>
-          <div class="talk-title">Determination of Optical Properties by Modeling Complex Solvent Effects: Molecular Dynamics and Density Functional Approach</div>
+          <h3 class="talk-title">Determination of Optical Properties by Modeling Complex Solvent Effects: Molecular Dynamics and Density Functional Approach</h3>
           <div class="talk-venue">University of South Carolina · 2023</div>
         </div>
       </div>
@@ -826,18 +830,31 @@ const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lightboximg');
 const lbCap = document.getElementById('lightboxcap');
 function closeLb() {
+  if (!lb.classList.contains('open')) return;
   lb.classList.remove('open');
   lb.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
+  if (lastFocus) lastFocus.focus();
+}
+let lastFocus = null;
+function openLb(img) {
+  lastFocus = img;
+  lbImg.src = img.src;
+  lbImg.alt = img.alt;
+  lbCap.textContent = img.alt;
+  lb.classList.add('open');
+  lb.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lightboxclose').focus();
 }
 document.querySelectorAll('.project-img img').forEach(img => {
-  img.addEventListener('click', () => {
-    lbImg.src = img.src;
-    lbImg.alt = img.alt;
-    lbCap.textContent = img.alt;
-    lb.classList.add('open');
-    lb.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+  // reachable and operable by keyboard, not just mouse
+  img.setAttribute('tabindex', '0');
+  img.setAttribute('role', 'button');
+  img.setAttribute('aria-label', 'Enlarge figure: ' + (img.alt || 'project figure'));
+  img.addEventListener('click', () => openLb(img));
+  img.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(img); }
   });
 });
 lb.addEventListener('click', closeLb);
